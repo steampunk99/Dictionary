@@ -11,3 +11,5 @@ def translate(w):
 
     else:
         return "This word is not in this dictionary"
+
+word = input("Enter a word: ")
