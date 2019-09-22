@@ -14,6 +14,9 @@ def translate(w):
         if yn == "y":
             return get_close_matches(w, data.keys())[0]
 
+        else:
+            return "Did not understand your input..Please try again"
+
     else:
         return "This word is not in this dictionary"
 
