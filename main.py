@@ -8,3 +8,6 @@ def translate(w):
     w = w.lower()
     if w in data:
         return w[data]
+
+    else:
+        return "This word is not in this dictionary"
