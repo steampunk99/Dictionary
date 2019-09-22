@@ -11,6 +11,8 @@ def translate(w):
 
     elif get_close_matches(w, data.keys()):
         yn = input("Did you mean %s" % get_close_matches(w, data.keys())[0])
+        if yn == "y":
+            return get_close_matches(w, data.keys())[0]
 
     else:
         return "This word is not in this dictionary"
